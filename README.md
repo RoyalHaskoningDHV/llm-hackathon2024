@@ -29,10 +29,6 @@ This repository contains a colab notebook called `llm_challenge_template.ipynb`.
 
 To decide who the winner is we will look at recent tenders published on TenderNed. To be clear, any team who retrieves and uses data from after January 2024 from TenderNed is automatically disqualified from the competition. CPV codes most valued by the municipality of Zwolle are given a higher weight, so getting those right is more important than other codes. Similarly, getting codes right at a higher CPV code level of detail will give more points.
 
-# Teams and prizes
-
-There is a policy at RHDHV to not gift money and to not give gifts larger than 25 Euros. The prize is a VVV gift card, which is almost as versatile as cash. We will therefore aim to make teams of 4. If needed we will tweak the prize distribution a little bit according to the team sizes.
-
 # Presenting results
 
 Each team will have a chance to present their experience and results between 15-16h. Teams are free to create powerpoint presentations of max. 1 slide to support their presentation.
