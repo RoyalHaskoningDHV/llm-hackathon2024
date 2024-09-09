@@ -29,4 +29,4 @@ def score_solution(predictions: pd.DataFrame) -> pd.DataFrame:
     f1 = f1_score(predictions, df["cpv_code"], average="weighted")
     df["accuracy"] = df["cpv_code"] == predictions["prediction"]
     weighted_acc = (df["accuracy"] * df["weight"]).sum() / df["weight"].sum()
-    return f1, weighted_acc
+    return {"f1-score": f1, "weighted accuracy": weighted_acc}
