@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "llm_hackathon"
 description = "Repository for the Aquasuite MINE models"
 readme = "README.md"
-requires-python = "3.8.10"
+requires-python = ">=3.8.10"
 dynamic = ["version"]
 
 [tool.setuptools]
