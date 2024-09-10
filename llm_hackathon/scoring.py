@@ -26,7 +26,7 @@ def download_csv_from_sas(
 
 def score_solution(predictions: pd.DataFrame) -> pd.DataFrame:
     df = download_csv_from_sas()
-    f1 = f1_score(predictions, df["cpv_code"], average="weighted")
+    f1 = f1_score(predictions, df["cpv_code"].iloc[:predictions.shape[0]], average="weighted")
     df["accuracy"] = df["cpv_code"] == predictions["prediction"]
     weighted_acc = (df["accuracy"] * df["weight"]).sum() / df["weight"].sum()
     return {"f1-score": f1, "weighted accuracy": weighted_acc}
